@@ -2,6 +2,7 @@ email-ext
 nodelabelparameter
 build-timestamp
 role-strategy
+authorize-project
 generic-webhook-trigger
 timestamper
 ssh-steps

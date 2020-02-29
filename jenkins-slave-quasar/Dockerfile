@@ -17,6 +17,7 @@ RUN apk update && \
     chmod 777 /slave && \
     curl -o /slave/swarm-client.jar https://repo.jenkins-ci.org/releases/org/jenkins-ci/plugins/swarm-client/${SWARM_VERSION}/swarm-client-${SWARM_VERSION}.jar
 
+COPY agent.jar /slave/agent.jar
 COPY run.sh /slave/run.sh
 
 RUN  chmod 777 /slave/*.sh

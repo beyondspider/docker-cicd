@@ -11,12 +11,14 @@ docker pull beyondspider/quasar:latest
 
 ## run
 ```bash
-export JENKINS_URL=http://192.168.31.102:8080/
+export JENKINS_URL=https://jenkins.beyondspider.com/
+export JENKINS_SECRET=
 export JENKINS_USERNAME=
 export JENKINS_PASSWORD=
 
 docker run -d \
     --env JENKINS_URL=${JENKINS_URL} \
+    --env JENKINS_SECRET=${JENKINS_SECRET} \
     --env JENKINS_USERNAME=${JENKINS_USERNAME} \
     --env JENKINS_PASSWORD=${JENKINS_PASSWORD} \
     --env JENKINS_NODE_NAME=quasar \

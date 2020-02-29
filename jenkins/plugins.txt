@@ -7,3 +7,4 @@ generic-webhook-trigger
 timestamper
 ssh-steps
 swarm
+pipeline-stage-view

@@ -1,14 +1,16 @@
-### jenkins
+# jenkins slave docker
 
-```build
+## build
+```
 docker build -t beyondspider/docker:latest .
 ```
-
-```pull
+## pull
+```bash
 docker pull beyondspider/docker:latest
 ```
 
-```run
+## run
+```bash
 export JENKINS_URL=http://192.168.31.102:8080/
 export JENKINS_USERNAME=
 export JENKINS_PASSWORD=
@@ -24,6 +26,7 @@ docker run -d \
     beyondspider/docker
 ```
 
-```remove
+## remove
+```bash
 docker rm -f docker
 ```

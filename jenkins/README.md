@@ -1,14 +1,17 @@
-### jenkins
+# jenkins
 
-```build
+## build
+```bash
 docker build -t beyondspider/jenkins:latest .
 ```
 
-```pull
+## pull
+```bash
 docker pull beyondspider/jenkins:latest
 ```
 
-```run
+## run
+```bash
 docker run -u root -d \
     -p 8080:8080 \
     -p 50000:50000 \
@@ -18,6 +21,7 @@ docker run -u root -d \
     beyondspider/jenkins:latest
 ```
 
-```remove
+## remove
+```bash
 docker rm -f jenkins
 ```

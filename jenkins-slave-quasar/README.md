@@ -1,12 +1,12 @@
-# jenkins slave docker
+# jenkins slave quasar
 
 ## build
 ```bash
-docker build -t beyondspider/docker:latest .
+docker build -t beyondspider/quasar:latest .
 ```
 ## pull
 ```bash
-docker pull beyondspider/docker:latest
+docker pull beyondspider/quasar:latest
 ```
 
 ## run
@@ -16,17 +16,16 @@ export JENKINS_USERNAME=
 export JENKINS_PASSWORD=
 
 docker run -d \
-    -v /var/run/docker.sock:/var/run/docker.sock \
     --env JENKINS_URL=${JENKINS_URL} \
     --env JENKINS_USERNAME=${JENKINS_USERNAME} \
     --env JENKINS_PASSWORD=${JENKINS_PASSWORD} \
-    --env JENKINS_NODE_NAME=docker \
-    --env JENKINS_NODE_LABLES=docker \
-    --name docker \
-    beyondspider/docker
+    --env JENKINS_NODE_NAME=quasar \
+    --env JENKINS_NODE_LABLES="node quasar" \
+    --name quasar \
+    beyondspider/quasar
 ```
 
 ## remove
 ```bash
-docker rm -f docker
+docker rm -f quasar
 ```

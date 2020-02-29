@@ -1,4 +1,4 @@
-FROM docker:latest
+FROM node:lts-alpine
 
 MAINTAINER from www.beyondspider.com by beyondspider (admin@beyondspider.com)
 
@@ -12,6 +12,7 @@ RUN apk update && \
     apk add --no-cache tzdata curl git openjdk8 && \
     ln -sf /usr/share/zoneinfo/${TZ} /etc/localtime && \
     rm -rf /var/cache/apk/* && \
+    npm install @quasar/cli && \
     mkdir /slave && \
     chmod 777 /slave && \
     curl -o /slave/swarm-client.jar https://repo.jenkins-ci.org/releases/org/jenkins-ci/plugins/swarm-client/${SWARM_VERSION}/swarm-client-${SWARM_VERSION}.jar

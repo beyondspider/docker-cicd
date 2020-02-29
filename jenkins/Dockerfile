@@ -4,11 +4,12 @@ MAINTAINER from www.beyondspider.com by beyondspider (admin@beyondspider.com)
 
 USER root
 
-ENV TIME_ZONE Asia/Shanghai
+ENV TZ Asia/Shanghai
+
 RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories
 RUN apk update && \
     apk add --no-cache tzdata && \
-    ln -sf /usr/share/zoneinfo/${TIME_ZONE} /etc/localtime && \
+    ln -sf /usr/share/zoneinfo/${TZ} /etc/localtime && \
     rm -rf /var/cache/apk/*
 
 COPY plugins.txt /usr/share/jenkins/ref/plugins.txt

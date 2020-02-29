@@ -20,7 +20,5 @@ else
 		 -password ${JENKINS_PASSWORD} \
 		 -name ${JENKINS_NODE_NAME} \
 		 -fsroot "/slave" \
-		 -labels "${JENKINS_NODE_LABLES}" \
-		 -deleteExistingClients \
-		 -disableClientsUniqueId
+		 -labels "${JENKINS_NODE_LABLES}"
 fi

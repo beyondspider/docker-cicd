@@ -47,3 +47,6 @@ docker run -d \
     --name quasar \
     beyondspider/quasar
 ```
+
+## aliyun mirror
+replace 'beyondspider/jenkins:latest' to 'registry.cn-hangzhou.aliyuncs.com/beyondspider/jenkins:latest'

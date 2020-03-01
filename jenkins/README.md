@@ -25,3 +25,6 @@ docker run -u root -d \
 ```bash
 docker rm -f jenkins
 ```
+
+## aliyun mirror
+replace 'beyondspider/jenkins:latest' to 'registry.cn-hangzhou.aliyuncs.com/beyondspider/jenkins:latest'

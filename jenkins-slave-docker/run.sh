@@ -20,5 +20,6 @@ else
 		 -password ${JENKINS_PASSWORD} \
 		 -name ${JENKINS_NODE_NAME} \
 		 -fsroot "/slave" \
+		 -executors 6 \
 		 -labels "${JENKINS_NODE_LABLES}"
 fi

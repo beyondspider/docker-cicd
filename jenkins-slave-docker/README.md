@@ -25,7 +25,7 @@ docker run -d \
     --env JENKINS_NODE_NAME=docker \
     --env JENKINS_NODE_LABLES=docker \
     --name docker \
-    beyondspider/docker
+    beyondspider/docker:latest
 ```
 
 ## remove

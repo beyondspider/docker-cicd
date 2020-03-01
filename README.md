@@ -27,7 +27,7 @@ docker run -d \
     --env JENKINS_NODE_NAME=docker \
     --env JENKINS_NODE_LABLES=docker \
     --name docker \
-    beyondspider/docker
+    beyondspider/docker:latest
 ```
 
 ## jenkins slave quasar
@@ -45,7 +45,7 @@ docker run -d \
     --env JENKINS_NODE_NAME=quasar \
     --env JENKINS_NODE_LABLES="node quasar" \
     --name quasar \
-    beyondspider/quasar
+    beyondspider/quasar:latest
 ```
 
 ## aliyun mirror

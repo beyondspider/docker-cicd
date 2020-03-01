@@ -24,7 +24,7 @@ docker run -d \
     --env JENKINS_NODE_NAME=quasar \
     --env JENKINS_NODE_LABLES="node quasar" \
     --name quasar \
-    beyondspider/quasar
+    beyondspider/quasar:latest
 ```
 
 ## remove

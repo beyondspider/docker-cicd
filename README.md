@@ -26,6 +26,7 @@ docker run -d \
     --env JENKINS_PASSWORD=${JENKINS_PASSWORD} \
     --env JENKINS_NODE_NAME=docker \
     --env JENKINS_NODE_LABLES=docker \
+    --restart=always \
     --name docker \
     beyondspider/docker:latest
 ```
@@ -44,6 +45,7 @@ docker run -d \
     --env JENKINS_PASSWORD=${JENKINS_PASSWORD} \
     --env JENKINS_NODE_NAME=quasar \
     --env JENKINS_NODE_LABLES="node quasar" \
+    --restart=always \
     --name quasar \
     beyondspider/quasar:latest
 ```

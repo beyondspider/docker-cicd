@@ -8,3 +8,4 @@ timestamper
 ssh-steps
 swarm
 pipeline-stage-view
+copyartifact

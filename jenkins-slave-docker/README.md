@@ -24,6 +24,7 @@ docker run -d \
     --env JENKINS_PASSWORD=${JENKINS_PASSWORD} \
     --env JENKINS_NODE_NAME=docker \
     --env JENKINS_NODE_LABLES=docker \
+    --restart=always \
     --name docker \
     beyondspider/docker:latest
 ```

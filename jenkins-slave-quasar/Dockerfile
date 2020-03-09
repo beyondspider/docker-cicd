@@ -9,7 +9,7 @@ ENV SWARM_VERSION 3.9
 
 RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories
 RUN apk update && \
-    apk add --no-cache tzdata openssh-client curl git openjdk8 && \
+    apk add --no-cache tzdata openssh-client rsync curl git openjdk8 && \
     ln -sf /usr/share/zoneinfo/${TZ} /etc/localtime && \
     rm -rf /var/cache/apk/* && \
     npm install -g @quasar/cli && \

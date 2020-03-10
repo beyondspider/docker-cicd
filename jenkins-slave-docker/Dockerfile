@@ -15,7 +15,7 @@ RUN apk update && \
     mkdir /slave && \
     chmod 777 /slave && \
     curl -o /slave/swarm-client.jar https://repo.jenkins-ci.org/releases/org/jenkins-ci/plugins/swarm-client/${SWARM_VERSION}/swarm-client-${SWARM_VERSION}.jar && \
-    ssh-keyscan -H github.wdf.sap.corp > ~/.ssh/known_hosts && \
+    ssh-keyscan -H github.com > ~/.ssh/known_hosts && \
     ssh-keyscan -H beyondspider.com >> ~/.ssh/known_hosts
 
 COPY agent.jar /slave/agent.jar

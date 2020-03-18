@@ -10,3 +10,4 @@ swarm
 pipeline-stage-view
 copyartifact
 ssh-agent
+ssh-slaves
